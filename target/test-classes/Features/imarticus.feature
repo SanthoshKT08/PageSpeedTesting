@@ -9,8 +9,11 @@ Scenario Outline:: user navigates to the Application
 	When Enter the Web page URl "http://imarticus.org/"
 	Then Click on Anazlyse
 	And wait for few minutes
-	And get the value to ExcelSheet "<Row>" and "<Cell>"
+	And get the page score value "<Row>" and "<Cell>"
+	And get the page Time value "<Row1>" and "<Cell1>"
 	
 	Examples: 
-	| Row | Cell |
-	| 1   |  1   |
+	| Row | Cell | Row1| Cell1| 
+	| 2   |  3   |  2 |   4   |
+	
+

@@ -1,11 +1,11 @@
 package com.PageSpeed.StepDefinitions;
 
-import java.util.ArrayList;
+import java.io.IOException;
 
 import org.junit.runner.RunWith;
+import org.openqa.selenium.WebDriver;
 
 import com.PageSpeed.Generics.Baseclass;
-import com.PageSpeed.Generics.FileUtilities;
 import com.PageSpeed.PageObjects.pagespeedPage;
 
 import cucumber.api.java.en.And;
@@ -46,21 +46,20 @@ public class Homepage extends Baseclass {
 		speed = new pagespeedPage(driver);
 		speed.verifymobileText(driver);
 		Thread.sleep(3000);
-		speed.viewScore(driver);
-		speed.view(driver);
-		Thread.sleep(2000);
-		speed.viewTime(driver);
-
 	}
-
-	@And("^get the value to ExcelSheet \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void get_the_value_to_excelsheet_something_and_something(int row, int cell) throws Throwable {
-		speed = new pagespeedPage(driver);
-		ArrayList<String> go = speed.viewScore(driver);
-		for (String well : go) {
-			FileUtilities.getscoreValue(row, cell, well);
-		}
+	
+	@And("^get the page score value \"([^\"]*)\" and \"([^\"]*)\"$")
+    public void get_the_page_score_value_something_and_something( int rows, int cells) throws IOException  {
 		
-	}
+		speed = new pagespeedPage(driver);
+		speed.viewScore(driver, rows, cells);
+      
+    }
+	
+	 @And("^get the page Time value \"([^\"]*)\" and \"([^\"]*)\"$")
+	    public void get_the_page_time_value_something_and_something(int row1, int cell1) throws Throwable {
+		 speed = new pagespeedPage(driver);
+		 speed.viewTime(driver, row1, cell1);
+	    }
 
 }

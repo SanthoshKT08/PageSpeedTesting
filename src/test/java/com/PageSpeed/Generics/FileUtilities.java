@@ -167,34 +167,4 @@ public class FileUtilities {
 	}
 	
 	
-	public static void getscoreValue(int row, int cell, String score) throws IOException
-	{
-		FileInputStream fis = new FileInputStream("src/main/resources/TestData.xlsx");
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheetName = wb.getSheet("Sheet1");
-		XSSFRow ro = sheetName.createRow(row);
-		XSSFCell ce = ro.createCell(cell);
-		ce.setCellType(ce.getCellType());
-		ce.setCellValue(score);
-		FileOutputStream fos = new FileOutputStream("src/main/resources/TestData.xlsx");
-		wb.write(fos);
-		fos.close();
-	}
-	
-	public static void getTimeValue(int row, int cell, String score) throws IOException
-	{
-		FileInputStream fis = new FileInputStream("src/main/resources/TestData.xlsx");
-		XSSFWorkbook wb = new XSSFWorkbook(fis);
-		XSSFSheet sheetName = wb.getSheet("Sheet1");
-		XSSFRow ro = sheetName.createRow(row);
-		XSSFCell ce = ro.createCell(cell);
-		ce.setCellType(ce.getCellType());
-		ce.setCellValue(score);
-		FileOutputStream fos = new FileOutputStream("src/main/resources/TestData.xlsx");
-		wb.write(fos);
-		fos.close();
-	}
-	
-
-
 }
