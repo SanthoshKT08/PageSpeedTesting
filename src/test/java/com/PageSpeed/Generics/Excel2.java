@@ -34,7 +34,6 @@ public class Excel2 {
             row = sheet.getRow(rowNum);
             if(row==null)
                 row = sheet.createRow(rowNum);
-
             cell = row.getCell(colNumber);
             if(cell == null)
                 cell = row.createCell(colNumber);
