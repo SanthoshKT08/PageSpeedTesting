@@ -143,5 +143,50 @@ public class pagespeedPage {
 		wb.write(fout);
 		fout.close();
 	}
+	
+
+	public void getdata(WebDriver driver, int getRow) throws IOException, InterruptedException                                                              
+	{
+		WebElement url = driver.findElement(By.xpath("(//a[@class=\"audited-url__link\"])[1]"));
+		String urls = url.getText();
+		System.out.println(urls);
+		
+		WebElement mobileScorevalue = driver.findElement(By.xpath("(//div[@class=\"lh-gauge__percentage\"])[1]"));
+		String mobileScore = mobileScorevalue.getText();
+		System.out.println("Mobile Score : " + mobileScore);
+		
+		WebElement mobileTimevalue = driver.findElement(By.xpath("(//span[text()='Time to Interactive']//following::div[1])[1]"));
+		FileUtilities.scrollPage(driver, "window.scrollBy(0,300)", "");
+		String mobileTime = mobileTimevalue.getText();
+		System.out.println("Mobile Time : " + mobileTime);
+		
+		pagespeedPage speed = new pagespeedPage(driver);
+		speed.verifymobileText(driver);
+		Thread.sleep(1000);
+		
+		speed = new pagespeedPage(driver);
+		speed.clickOnDesktop();
+		
+		WebElement desktopScorevalue = driver.findElement(By.xpath("(//div[@class=\"lh-gauge__percentage\"])[2]"));
+		String desktopScore = desktopScorevalue.getText();
+		System.out.println("Desktop Score : " + desktopScore);
+		
+		WebElement desktopTimevalue = driver.findElement(By.xpath("(//span[text()='Time to Interactive']//following::div[1])[2]"));
+		String desktopTime = desktopTimevalue.getText();
+		System.out.println("Desktop Time : " + desktopTime);
+		
+		FileInputStream fis = new FileInputStream("src/main/resources/Excel/TestData.xlsx");
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sh = wb.getSheet("pagespeedtesting");
+		XSSFRow row = sh.getRow(getRow);
+		row.createCell(2).setCellValue(urls);
+		row.createCell(3).setCellValue(mobileScore);
+		row.createCell(4).setCellValue(mobileTime);
+		row.createCell(5).setCellValue(desktopScore);
+		row.createCell(6).setCellValue(desktopTime);
+		FileOutputStream fout = new FileOutputStream("src/main/resources/Excel/TestData.xlsx");
+		wb.write(fout);
+		fout.close();                                                          
+	}
 
 }
