@@ -40,49 +40,55 @@ public class Homepage extends Baseclass {
 		Thread.sleep(3000);
 	}
 	
+	 @And("^get the pageSpeedDatas \"([^\"]*)\"$")
+	    public void get_the_pagespeeddatas_something(int pagespeeddata) throws IOException, InterruptedException   {
+		 speed = new pagespeedPage(driver);
+		 speed.getdata(driver, pagespeeddata);
+	    }
 
-    @And("^get the page URL and write to Excel \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void get_the_page_url_and_write_to_excel_something_and_something(int rowurl, int cellurl) throws Throwable {
-    	speed = new pagespeedPage(driver);
-    	speed.getURL(driver, rowurl, cellurl);
-    	Thread.sleep(1000);
-    	
-    }
-	
+
+	/*@And("^get the page URL and write to Excel \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void get_the_page_url_and_write_to_excel_something_and_something(int rowurl, int cellurl) throws Throwable {
+		speed = new pagespeedPage(driver);
+		speed.getURL(driver, rowurl, cellurl);
+		Thread.sleep(1000);
+
+	}
+
 	@And("^get the page score value \"([^\"]*)\" and \"([^\"]*)\"$")
-    public void get_the_page_score_value_something_and_something( int rows, int cells) throws IOException, InterruptedException  {
-		
+	public void get_the_page_score_value_something_and_something( int rows, int cells) throws IOException, InterruptedException  {
+
 		speed = new pagespeedPage(driver);
 		speed.getmobileScore(driver, rows, cells);
 		Thread.sleep(1000);
-      
-    }
-	
-	 @And("^get the page Time value \"([^\"]*)\" and \"([^\"]*)\"$")
-	    public void get_the_page_time_value_something_and_something(int row1, int cell1) throws Throwable {
-		 speed = new pagespeedPage(driver);
-		 speed.getmobileTime(driver, row1, cell1);
-		 Thread.sleep(1000);
-	    }
-	 
-	 
-	 @And("^Click on Desktop to view the score and time$")
-	    public void click_on_desktop_to_view_the_score_and_time()   {
-		 speed = new pagespeedPage(driver);
-		 speed.clickOnDesktop();
-	    }
+
+	}
+
+	@And("^get the page Time value \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void get_the_page_time_value_something_and_something(int row1, int cell1) throws Throwable {
+		speed = new pagespeedPage(driver);
+		speed.getmobileTime(driver, row1, cell1);
+		Thread.sleep(1000);
+	}
 
 
-	    @And("^get the page score value for desktop \"([^\"]*)\" and \"([^\"]*)\"$")
-	    public void get_the_page_score_value_for_desktop_something_and_something(int dsrow, int dscell) throws Throwable {
-	    	 speed = new pagespeedPage(driver);
-	    	 speed.getDesktopScore(driver, dsrow, dscell);
-	    }
+	@And("^Click on Desktop to view the score and time$")
+	public void click_on_desktop_to_view_the_score_and_time()   {
+		speed = new pagespeedPage(driver);
+		speed.clickOnDesktop();
+	}
 
-	    @And("^get the page Time value for desktop \"([^\"]*)\" and \"([^\"]*)\"$")
-	    public void get_the_page_time_value_for_desktop_something_and_something(int dtrow, int dtcell) throws Throwable {
-	    	 speed = new pagespeedPage(driver);
-	    	 speed.getDesktopTime(driver, dtrow, dtcell);
-	    }
+
+	@And("^get the page score value for desktop \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void get_the_page_score_value_for_desktop_something_and_something(int dsrow, int dscell) throws Throwable {
+		speed = new pagespeedPage(driver);
+		speed.getDesktopScore(driver, dsrow, dscell);
+	}
+
+	@And("^get the page Time value for desktop \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void get_the_page_time_value_for_desktop_something_and_something(int dtrow, int dtcell) throws Throwable {
+		speed = new pagespeedPage(driver);
+		speed.getDesktopTime(driver, dtrow, dtcell);
+	}*/
 
 }
