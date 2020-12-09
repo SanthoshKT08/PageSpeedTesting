@@ -1,5 +1,7 @@
 package com.PageSpeed.Generics;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -17,6 +19,7 @@ public class Baseclass {
 				WebDriverManager.chromedriver().setup();
 				driver = new ChromeDriver();
 				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			}
 			
 			else if (browser.equalsIgnoreCase(Browsers.FIREFOX.name())) 
@@ -24,6 +27,7 @@ public class Baseclass {
 				WebDriverManager.firefoxdriver().setup();
 				driver = new FirefoxDriver();
 				driver.manage().window().maximize();
+				driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 			}
 			
 		}
@@ -34,6 +38,7 @@ public class Baseclass {
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver();
 					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 				}
 				
 				else if (browser.equalsIgnoreCase(Browsers.FIREFOX.name())) 
@@ -41,6 +46,7 @@ public class Baseclass {
 					WebDriverManager.firefoxdriver().setup();
 					driver = new FirefoxDriver();
 					driver.manage().window().maximize();
+					driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 				}
 		}
 		

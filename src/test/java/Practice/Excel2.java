@@ -1,4 +1,4 @@
-package com.PageSpeed.Generics;
+package Practice;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;

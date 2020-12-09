@@ -1,4 +1,4 @@
-package com.PageSpeed.Generics;
+package Practice;
 
 public class Excel3 {
 	

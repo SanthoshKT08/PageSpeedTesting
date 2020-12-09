@@ -18,9 +18,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.PageSpeed.Generics.FileUtilities;
 
-public class pagespeedPage {
+public class PageSpeedInsightObject {
 
-	public pagespeedPage(WebDriver driver) 
+	public PageSpeedInsightObject(WebDriver driver) 
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -160,11 +160,11 @@ public class pagespeedPage {
 		String mobileTime = mobileTimevalue.getText();
 		System.out.println("Mobile Time : " + mobileTime);
 		
-		pagespeedPage speed = new pagespeedPage(driver);
+		PageSpeedInsightObject speed = new PageSpeedInsightObject(driver);
 		speed.verifymobileText(driver);
 		Thread.sleep(1000);
 		
-		speed = new pagespeedPage(driver);
+		speed = new PageSpeedInsightObject(driver);
 		speed.clickOnDesktop();
 		
 		WebElement desktopScorevalue = driver.findElement(By.xpath("(//div[@class=\"lh-gauge__percentage\"])[2]"));
@@ -187,6 +187,7 @@ public class pagespeedPage {
 		FileOutputStream fout = new FileOutputStream("src/main/resources/Excel/TestData.xlsx");
 		wb.write(fout);
 		fout.close();                                                          
-	}
-
+	}	
+	
 }
+
