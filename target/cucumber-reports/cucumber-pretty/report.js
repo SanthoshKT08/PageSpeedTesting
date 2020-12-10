@@ -69,7 +69,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 8216839000,
+  "duration": 7560487700,
   "status": "passed"
 });
 formatter.scenario({
@@ -124,7 +124,7 @@ formatter.match({
   "location": "GooglePageInsight.enter_the_URL(String)"
 });
 formatter.result({
-  "duration": 3960021600,
+  "duration": 2818776200,
   "status": "passed"
 });
 formatter.match({
@@ -137,21 +137,21 @@ formatter.match({
   "location": "GooglePageInsight.enter_the_Web_page_URl(String)"
 });
 formatter.result({
-  "duration": 166900700,
+  "duration": 132742400,
   "status": "passed"
 });
 formatter.match({
   "location": "GooglePageInsight.click_on_Anazlyse()"
 });
 formatter.result({
-  "duration": 291689200,
+  "duration": 79987800,
   "status": "passed"
 });
 formatter.match({
   "location": "GooglePageInsight.wait_for_few_minutes()"
 });
 formatter.result({
-  "duration": 21207363400,
+  "duration": 19484194900,
   "status": "passed"
 });
 formatter.match({
@@ -164,12 +164,55 @@ formatter.match({
   "location": "GooglePageInsight.get_the_pagespeeddatas_something(int)"
 });
 formatter.result({
-  "duration": 3583865100,
+  "duration": 3160203000,
   "status": "passed"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 274418500,
+  "duration": 341961400,
+  "status": "passed"
+});
+formatter.uri("ZEmailAttachtment.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Sending mail",
+  "description": "\r\nTesting imarticus program pages",
+  "id": "sending-mail",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@Email_Attachment"
+    }
+  ]
+});
+formatter.before({
+  "duration": 5763446000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 6,
+  "name": ": Mail",
+  "description": "",
+  "id": "sending-mail;:-mail",
+  "type": "scenario",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "line": 7,
+  "name": "Send mail to origanization",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "MailAttachment.send_mail_to_origanization()"
+});
+formatter.result({
+  "duration": 5335934700,
+  "status": "passed"
+});
+formatter.embedding("image/png", "embedded1.png");
+formatter.after({
+  "duration": 333007600,
   "status": "passed"
 });
 });

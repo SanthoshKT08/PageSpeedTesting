@@ -143,16 +143,17 @@ public class FileUtilities {
 	public static void sendMailReport() throws EmailException
 	{
 		EmailAttachment attachment = new EmailAttachment();
-		attachment.setPath(System.getProperty("user.dir")+"/htmlReport.html");
+		attachment.setPath("src/main/resources/Excel/TestData.xlsx");
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
 		attachment.setDescription("Automation Testing");
-		attachment.setName("suman");
+		attachment.setName("Santhosh KT");
 		MultiPartEmail email = new MultiPartEmail();
 		email.setHostName("smtp.gmail.com");
 		email.setSmtpPort(456);
 		email.setAuthenticator(new DefaultAuthenticator("ktsanthosh08@gmail.com", "1@santhoshkt"));
 		email.setSSLOnConnect(true);
 		email.addTo ("sumans1826@gmail.com", "suman");
+		email.addTo ("santhosh@codewave.com", "Santhosh KT");
 		email.setFrom("ktsanthosh08@gmail.com", "santhosh");
 		email.setSubject("Report");
 		email.setMsg("Test Report");

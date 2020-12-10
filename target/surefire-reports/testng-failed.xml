@@ -7,7 +7,7 @@
         <methods>
           <include name="setupclass"/>
           <include name="teatdownclass"/>
-          <include name="feature" invocation-numbers="0"/>
+          <include name="feature" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.PageSpeed.CucumberOptions.TestRunner -->
     </classes>
