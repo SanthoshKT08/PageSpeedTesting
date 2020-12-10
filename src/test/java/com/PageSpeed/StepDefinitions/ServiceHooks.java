@@ -23,8 +23,33 @@ public class ServiceHooks {
 	public void intializeBrowser()
 	{
 		base = new Baseclass();
-		base.selectBrowser(com.PageSpeed.Generics.Browsers.CHROME.name());
+		base.selectBrowser(com.PageSpeed.Generics.Browsers.FIREFOX.name());
 	}
+	
+//	@After
+//	public void endTest(Scenario scenario) {
+//		if (scenario.isFailed()) {
+//
+//			try {
+//				log.info(scenario.getName() + " is Failed");
+//				final byte[] screenshot = ((TakesScreenshot) base.driver).getScreenshotAs(OutputType.BYTES);
+//				scenario.embed(screenshot, "image/png"); // ... and embed it in
+//			} catch (WebDriverException e) {
+//				e.printStackTrace();
+//			}
+//
+//		} else {
+//			try {
+//				log.info(scenario.getName() + " is pass");
+//				scenario.embed(((TakesScreenshot) base.driver).getScreenshotAs(OutputType.BYTES), "image/png");
+//			} catch (Exception e) {
+//				e.printStackTrace();
+//			}
+//		}
+//
+//		//base.driver.quit();
+//	
+//	}
 	
 	@After
 	public void endTest(Scenario scenario) {
@@ -40,8 +65,8 @@ public class ServiceHooks {
 
 		} else {
 			try {
-				log.info(scenario.getName() + " is pass");
-				scenario.embed(((TakesScreenshot) base.driver).getScreenshotAs(OutputType.BYTES), "image/png");
+				log.info(scenario.getName() + " is pass");                                            
+				scenario.embed(((FirefoxDriver) base.driver).getFullPageScreenshotAs(OutputType.BYTES), "image/png");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -2,34 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="29326" started-at="2020-11-27T12:41:59Z" finished-at="2020-11-27T12:42:29Z">
+  <suite name="Suite" duration-ms="22341" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:15:01Z">
     <groups>
-      <group name="cucumber">
-        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.PageSpeed.CucumberOptions.TestRunner@78b729e6]" name="feature" class="com.PageSpeed.CucumberOptions.TestRunner"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="29326" started-at="2020-11-27T12:41:59Z" finished-at="2020-11-27T12:42:29Z">
-      <class name="com.PageSpeed.CucumberOptions.TestRunner">
-        <test-method status="PASS" signature="setupclass()[pri:0, instance:com.PageSpeed.CucumberOptions.TestRunner@78b729e6]" name="setupclass" is-config="true" duration-ms="220" started-at="2020-11-27T12:41:59Z" finished-at="2020-11-27T12:41:59Z">
+    <test name="Test" duration-ms="22341" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:15:01Z">
+      <class name="Practice.FullpageScreenshot">
+        <test-method status="PASS" signature="start()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="start" is-config="true" duration-ms="17638" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:14:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupclass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.PageSpeed.CucumberOptions.TestRunner@78b729e6]" name="feature" duration-ms="28965" started-at="2020-11-27T12:42:00Z" description="Run cucumber features" data-provider="features" finished-at="2020-11-27T12:42:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Page Speed Testing - Home Page]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="getFullPageScreenshot()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="getFullPageScreenshot" duration-ms="1182" started-at="2020-12-10T14:14:56Z" finished-at="2020-12-10T14:14:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="teatdownclass()[pri:0, instance:com.PageSpeed.CucumberOptions.TestRunner@78b729e6]" name="teatdownclass" is-config="true" duration-ms="28" started-at="2020-11-27T12:42:29Z" finished-at="2020-11-27T12:42:29Z">
+        </test-method> <!-- getFullPageScreenshot -->
+        <test-method status="PASS" signature="end()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="end" is-config="true" duration-ms="3469" started-at="2020-12-10T14:14:58Z" finished-at="2020-12-10T14:15:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- teatdownclass -->
-      </class> <!-- com.PageSpeed.CucumberOptions.TestRunner -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- end -->
+      </class> <!-- Practice.FullpageScreenshot -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
