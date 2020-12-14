@@ -24,10 +24,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.Keyboard;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import net.bytebuddy.asm.Advice.Enter;
 
 public class FileUtilities {
 
@@ -140,24 +143,25 @@ public class FileUtilities {
 
 	}
 	
-	public static void sendMailReport() throws EmailException
+	public static void sendMailReport() throws EmailException, InterruptedException
 	{
 		EmailAttachment attachment = new EmailAttachment();
 		attachment.setPath("src/main/resources/Excel/TestData.xlsx");
 		attachment.setDisposition(EmailAttachment.ATTACHMENT);
-		attachment.setDescription("Automation Testing");
+		attachment.setDescription("Automation Testing - PageSpeedTesting");
 		attachment.setName("Santhosh KT");
 		MultiPartEmail email = new MultiPartEmail();
 		email.setHostName("smtp.gmail.com");
 		email.setSmtpPort(456);
 		email.setAuthenticator(new DefaultAuthenticator("ktsanthosh08@gmail.com", "1@santhoshkt"));
 		email.setSSLOnConnect(true);
-		email.addTo ("sumans1826@gmail.com", "suman");
 		email.addTo ("santhosh@codewave.com", "Santhosh KT");
 		email.setFrom("ktsanthosh08@gmail.com", "santhosh");
-		email.setSubject("Report");
-		email.setMsg("Test Report");
+		email.setSubject("Imarticus Page Speed Testing Report");
+		email.setMsg("Hi Team Testing done for page speed Testing with google insight, GTmetrix and pingdom tools. "
+				+ "Please find the attachemnt and download the file make to edit the file to .xlsx." );
 		email.attach(attachment);
+		Thread.sleep(1000);
 		email.send();
 	}
 	

@@ -1,13 +1,16 @@
 package com.PageSpeed.StepDefinitions;
 
+import org.apache.commons.mail.EmailException;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterSuite;
 
 import com.PageSpeed.Generics.Baseclass;
+import com.PageSpeed.Generics.FileUtilities;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
@@ -27,7 +30,7 @@ public class ServiceHooks {
 	}
 	
 	@After
-	public void endTest(Scenario scenario) {
+	public void endTest(Scenario scenario) throws EmailException {
 		if (scenario.isFailed()) {
 
 			try {
@@ -48,7 +51,7 @@ public class ServiceHooks {
 		}
 
 		base.driver.quit();
-	
+
 	}
 	
 	/*@After

@@ -2,6 +2,7 @@ package com.PageSpeed.StepDefinitions;
 
 import java.io.IOException;
 
+import org.apache.commons.mail.EmailException;
 import org.junit.runner.RunWith;
 import com.PageSpeed.Generics.Baseclass;
 import com.PageSpeed.PageObjects.PageSpeedInsightObject;
@@ -42,7 +43,7 @@ public class GooglePageInsight extends Baseclass {
 	}
 	
 	 @And("^get the pageSpeedDatas \"([^\"]*)\"$")
-	    public void get_the_pagespeeddatas_something(int pagespeeddata) throws IOException, InterruptedException   {
+	    public void get_the_pagespeeddatas_something(int pagespeeddata) throws IOException, InterruptedException, EmailException   {
 		 speed = new PageSpeedInsightObject(driver);
 		 speed.getdata(driver, pagespeeddata);
 	    }

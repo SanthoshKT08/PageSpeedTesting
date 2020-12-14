@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;
 public class MailAttachment {
 	
 	@Given("^Send mail to origanization$")
-    public void send_mail_to_origanization() throws EmailException {
+    public void send_mail_to_origanization() throws EmailException, InterruptedException {
        FileUtilities.sendMailReport();
     }
 
