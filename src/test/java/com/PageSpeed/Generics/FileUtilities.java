@@ -153,7 +153,7 @@ public class FileUtilities {
 		MultiPartEmail email = new MultiPartEmail();
 		email.setHostName("smtp.gmail.com");
 		email.setSmtpPort(456);
-		email.setAuthenticator(new DefaultAuthenticator("", ""));
+		email.setAuthenticator(new DefaultAuthenticator("Email id", "password"));
 		email.setSSLOnConnect(true);
 		email.addTo ("santhosh@codewave.com", "Santhosh KT");
 		email.setFrom("ktsanthosh08@gmail.com", "santhosh");
