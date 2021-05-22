@@ -1,37 +1,17 @@
-2020-12-14 13:12:730 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in Google page insight is pass
-2020-12-14 13:12:60 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:698 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:953 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:274 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:793 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:861 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:286 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:502 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:721 INFO  ServiceHooks:46 - : Tester testing on imarticus Career pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:127 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:532 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:141 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:282 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:173 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:801 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:379 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:211 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:835 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:922 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:884 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:536 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:583 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:726 INFO  ServiceHooks:46 - : Tester testing on imarticus Program pages - page speed testing in Google page insight is pass
-2020-12-14 13:12:309 INFO  ServiceHooks:37 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is Failed
-2020-12-14 13:12:109 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:430 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:931 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:425 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:321 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:314 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:997 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:302 INFO  ServiceHooks:46 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is pass
-2020-12-14 13:12:382 INFO  ServiceHooks:37 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is Failed
-2020-12-14 13:12:892 INFO  ServiceHooks:37 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is Failed
-2020-12-14 13:12:165 INFO  ServiceHooks:37 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is Failed
-2020-12-14 13:12:761 INFO  ServiceHooks:37 - Tester testing on imarticus home page - page speed testing in GTmetrix tool is Failed
+2021-05-22 18:05:543 INFO  ServiceHooks:45 - Test case 1 : Check response on enter a word/Sentence in the search text box is pass
+2021-05-22 18:05:113 INFO  ServiceHooks:45 - Test case 1 : Check response on enter a word/Sentence in the search text box is pass
+2021-05-22 18:05:419 INFO  ServiceHooks:45 - Test case 2 : Check response on press enter from the text box is pass
+2021-05-22 18:05:181 INFO  ServiceHooks:45 - Test case 3 : Check response on entering max length of search keyword. is pass
+2021-05-22 18:05:963 INFO  ServiceHooks:45 - Test case 4 : Check response on entering invalid value in the search field is pass
+2021-05-22 18:05:144 INFO  ServiceHooks:45 - Test case 4 : Check response on entering invalid value in the search field is pass
+2021-05-22 18:05:654 INFO  ServiceHooks:45 - Test case 5 : Check response on entering invalid value in the search field is pass
+2021-05-22 19:05:369 INFO  ServiceHooks:45 - Test case 6 : Check response on auto-suggestion while enter a word is pass
+2021-05-22 19:05:964 INFO  ServiceHooks:45 - Test case 7 : Verify that the suggestion provided by Google are sorted by most popular/relevant suggestions is pass
+2021-05-22 19:05:297 INFO  ServiceHooks:45 - Test case 8 :Verify that user can make search corresponding to different categories is pass
+2021-05-22 19:05:822 INFO  ServiceHooks:45 - Test case 8 :Verify that user can make search corresponding to different categories is pass
+2021-05-22 19:05:915 INFO  ServiceHooks:45 - Test case 9 :Verify that misspelled keyword in google search text box is pass
+2021-05-22 19:05:991 INFO  ServiceHooks:45 - Test case 10 :Verify that multi word misspelled keywords is pass
+2021-05-22 19:05:921 INFO  ServiceHooks:45 - Test case 11 :Verify the performance of search check if the time taken to fetch the response is pass
+2021-05-22 19:05:936 INFO  ServiceHooks:45 - Test case 12 :Verify that total number of results fetched for a keyword is pass
+2021-05-22 19:05:683 INFO  ServiceHooks:45 - Test case 13 : Verify Google calculator service make any arithmetic request is pass
+2021-05-22 19:05:304 INFO  ServiceHooks:45 - Test case 14 :Verify from google result to navigate to home page and search something is pass

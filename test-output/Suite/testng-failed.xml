@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="chromebrowser(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.PageSpeed.CucumberOptions.TestRunner">
+      <class name="Practice.parallerBrowsers">
         <methods>
-          <include name="setupclass"/>
-          <include name="teatdownclass"/>
-          <include name="feature"/>
+          <include name="setup"/>
+          <include name="end"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- com.PageSpeed.CucumberOptions.TestRunner -->
+      </class> <!-- Practice.parallerBrowsers -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- chromebrowser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -2,24 +2,34 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="22341" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:15:01Z">
+  <suite name="Default suite" duration-ms="9488" started-at="2021-05-22T13:17:37Z" finished-at="2021-05-22T13:17:47Z">
     <groups>
+      <group name="cucumber">
+        <method signature="TestRunner.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Google.CucumberOptions.TestRunner@f8c1ddd]" name="feature" class="com.Google.CucumberOptions.TestRunner"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test name="Test" duration-ms="22341" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:15:01Z">
-      <class name="Practice.FullpageScreenshot">
-        <test-method status="PASS" signature="start()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="start" is-config="true" duration-ms="17638" started-at="2020-12-10T14:14:39Z" finished-at="2020-12-10T14:14:56Z">
+    <test name="Default test" duration-ms="9488" started-at="2021-05-22T13:17:37Z" finished-at="2021-05-22T13:17:47Z">
+      <class name="com.Google.CucumberOptions.TestRunner">
+        <test-method status="PASS" signature="setupclass()[pri:0, instance:com.Google.CucumberOptions.TestRunner@f8c1ddd]" name="setupclass" is-config="true" duration-ms="326" started-at="2021-05-22T13:17:37Z" finished-at="2021-05-22T13:17:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-        <test-method status="PASS" signature="getFullPageScreenshot()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="getFullPageScreenshot" duration-ms="1182" started-at="2020-12-10T14:14:56Z" finished-at="2020-12-10T14:14:58Z">
+        </test-method> <!-- setupclass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.Google.CucumberOptions.TestRunner@f8c1ddd]" name="feature" duration-ms="9030" started-at="2021-05-22T13:17:38Z" description="Run cucumber features" data-provider="features" finished-at="2021-05-22T13:17:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Google Search functionality]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getFullPageScreenshot -->
-        <test-method status="PASS" signature="end()[pri:0, instance:Practice.FullpageScreenshot@163e4e87]" name="end" is-config="true" duration-ms="3469" started-at="2020-12-10T14:14:58Z" finished-at="2020-12-10T14:15:01Z">
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="teatdownclass()[pri:0, instance:com.Google.CucumberOptions.TestRunner@f8c1ddd]" name="teatdownclass" is-config="true" duration-ms="27" started-at="2021-05-22T13:17:47Z" finished-at="2021-05-22T13:17:47Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- end -->
-      </class> <!-- Practice.FullpageScreenshot -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- teatdownclass -->
+      </class> <!-- com.Google.CucumberOptions.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
